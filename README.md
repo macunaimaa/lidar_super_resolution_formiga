@@ -12,7 +12,7 @@ Download the package to your workspace and compile to code with ```catkin_make``
 
 # Data Download
 
-[Download the demo data](https://drive.google.com/drive/folders/1nqxnJI1d_u5II4uzXoFJxVMdmbpdHdUh?usp=sharing) into your ```Documents``` folder in your home directory. The data directory should look like this ```/home/$USER/Documents/SuperResolution```. The ```SuperResolution``` is the project directory and contains .npy files. You can also change the directory settings in ```data.py```. We simulate an Ouster OS1-64 lidar in the CARLA simulator. The simulated point clouds are projected onto range images and used for training. We test the trained neulral network on real Ouster data to see its performance.
+[Download the demo data](https://drive.google.com/drive/folders/1oPNyeNW8yeBrWHMWRlYCT_e4tfMPzLKO?usp=sharing) into your ```Documents``` folder in your home directory. The data directory should look like this ```/home/$USER/Documents/SuperResolution```. The ```SuperResolution``` is the project directory and contains .npy files. You can also change the directory settings in ```data.py```. We simulate an Ouster OS1-64 lidar in the CARLA simulator. The simulated point clouds are projected onto range images and used for training. We test the trained neulral network on real Ouster data to see its performance.
 
 Demo data:
 ```
