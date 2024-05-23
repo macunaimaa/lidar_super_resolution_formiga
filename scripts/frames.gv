@@ -1,0 +1,15 @@
+digraph G {
+"base_link" -> "chassis_link"[label="Broadcaster: /play_1716474335142060998\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1716474345.432 sec old)\nBuffer length: 0.000 sec\n"];
+"odom" -> "base_link"[label="Broadcaster: /play_1716474335142060998\nAverage rate: 199.397 Hz\nMost recent transform: 1644994747.371 ( 71479598.061 sec old)\nBuffer length: 4.975 sec\n"];
+"chassis_link" -> "imu_link"[label="Broadcaster: /play_1716474335142060998\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1716474345.432 sec old)\nBuffer length: 0.000 sec\n"];
+"chassis_link" -> "navsat_link"[label="Broadcaster: /play_1716474335142060998\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1716474345.432 sec old)\nBuffer length: 0.000 sec\n"];
+"chassis_link" -> "velodyne"[label="Broadcaster: /play_1716474335142060998\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1716474345.432 sec old)\nBuffer length: 0.000 sec\n"];
+"map" -> "odom"[label="Broadcaster: /play_1716474335142060998\nAverage rate: 199.397 Hz\nMost recent transform: 1644994747.371 ( 71479598.061 sec old)\nBuffer length: 4.975 sec\n"];
+"map" -> "local_map"[label="Broadcaster: /play_1716474335142060998\nAverage rate: 50.202 Hz\nMost recent transform: 1644994747.351 ( 71479598.081 sec old)\nBuffer length: 4.940 sec\n"];
+"base_link" -> "base_footprint"[label="Broadcaster: /play_1716474335142060998\nAverage rate: 10.181 Hz\nMost recent transform: 1644994747.404 ( 71479598.028 sec old)\nBuffer length: 4.813 sec\n"];
+"odom" -> "lidar_link"[label="Broadcaster: /play_1716474335142060998\nAverage rate: 5.208 Hz\nMost recent transform: 1644994746.994 ( 71479598.438 sec old)\nBuffer length: 4.801 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1716474345.432"[ shape=plaintext ] ;
+ }->"map";
+}

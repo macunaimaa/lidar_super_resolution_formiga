@@ -53,9 +53,9 @@ class PointCloudProcessor:
         self.intensity = self.rowList + self.colList / image_cols
         
     def publishPointCloud(self, thisImage, pubHandle, timeStamp, height):
-
-        if pubHandle.get_num_connections() == 0:
-            return
+        print(thisImage)
+        # if pubHandle.get_num_connections() == 0:
+        #     return
 
         # multi-channel range image, the first channel is range
         if len(thisImage.shape) == 3:
@@ -88,9 +88,9 @@ class PointCloudProcessor:
         # predicted image: n x rows x cols x 2
         predImages = np.load(os.path.join(home_dir, 'Documents', project_name, 'ouster_range_image-from-16-to-64_prediction.npy')) * normalize_ratio # 
 
-        print 'Input range image shape:'
-        print origImages.shape
-        print predImages.shape
+        print('Input range image shape:')
+        print(origImages.shape)
+        print(predImages.shape)
 
         low_res_index = range(0, image_rows_high, upscaling_factor)
         predImages[:,low_res_index,:,0:1] = origImages[:,low_res_index,:,0:1] # copy some of beams from origImages to predImages
